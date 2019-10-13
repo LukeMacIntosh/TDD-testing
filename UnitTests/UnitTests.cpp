@@ -47,7 +47,7 @@ namespace UnitTests
 			Triangle t5 = {};
 			t5.angleA = 60;
 			t5.angleB = 40;
-			Assert::AreEqual(t5.CalcAngle(t5.angleA, t5.angleB), 80);
+			Assert::AreEqual(t5.CalcAngle(t5.angleA, t5.angleB), 80); 
 		}
 
 	};

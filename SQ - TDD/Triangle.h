@@ -26,6 +26,6 @@ public:
 	}
 	int CalcAngle(int angleA, int angleB) {
 		angleC = 180 - (angleA + angleB);
-		return angleC;
+		return angleC; 
 	}
 };
