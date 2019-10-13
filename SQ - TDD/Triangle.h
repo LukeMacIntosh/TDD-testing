@@ -29,6 +29,6 @@ public:
 			return 0;
 		}
 		angleC = 180 - (angleA + angleB);
-		return angleC;
+		return angleC; 
 	}
 };
