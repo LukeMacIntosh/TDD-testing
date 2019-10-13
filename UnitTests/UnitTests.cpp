@@ -26,5 +26,13 @@ namespace UnitTests
 			Assert::AreEqual(t2.CalcHypotenus(t2.sideA, t2.sideB), 0);
 		}
 
+		TEST_METHOD(TestCalcAreaMethodValid)
+		{
+			Triangle t3 = {};
+			t3.sideA = 4;
+			t3.sideB = 3;
+			Assert::AreEqual(t3.CalcArea(t3.sideA, t3.sideB), 6);
+		}
+
 	};
 }
