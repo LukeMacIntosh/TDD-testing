@@ -34,5 +34,13 @@ namespace UnitTests
 			Assert::AreEqual(t3.CalcArea(t3.sideA, t3.sideB), 6);
 		}
 
+		TEST_METHOD(TestCalcAreaMethodInValid)
+		{
+			Triangle t3 = {};
+			t3.sideA = -4;
+			t3.sideB = -3;
+			Assert::AreEqual(t3.CalcArea(t3.sideA, t3.sideB), 0);
+		}
+
 	};
 }
