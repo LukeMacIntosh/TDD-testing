@@ -25,6 +25,9 @@ public:
 		return Area;
 	}
 	int CalcAngle(int angleA, int angleB) {
+		if (angleA < 0 || angleB < 0) {
+			return 0;
+		}
 		angleC = 180 - (angleA + angleB);
 		return angleC;
 	}

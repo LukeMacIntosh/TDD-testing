@@ -52,10 +52,10 @@ namespace UnitTests
 
 		TEST_METHOD(TestCalcAngleMethodInValid)
 		{
-			Triangle t5 = {};
-			t5.angleA = -60;
-			t5.angleB = -40;
-			Assert::AreEqual(t5.CalcAngle(t5.angleA, t5.angleB), 0);
+			Triangle t6 = {};
+			t6.angleA = -60;
+			t6.angleB = -40;
+			Assert::AreEqual(t6.CalcAngle(t6.angleA, t6.angleB), 0); 
 		}
 
 	};
