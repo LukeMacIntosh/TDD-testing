@@ -7,10 +7,10 @@ public:
 	int sideC;
 
 	int CalcHypotenus(int sideA, int sideB) {
-		sideC = sqrt((sideA * sideA) + (sideB * sideB));
-		if (sideC < 0) {
+		if (sideA < 0 || sideB < 0) {
 			return 0;
 		}
+		sideC = sqrt((sideA * sideA) + (sideB * sideB));
 		return sideC;
 	}
 };

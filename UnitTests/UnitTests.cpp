@@ -17,6 +17,7 @@ namespace UnitTests
 			t1.sideB = 3;
 			Assert::AreEqual(t1.CalcHypotenus(t1.sideA, t1.sideB), 5);
 		}
+
 		TEST_METHOD(TestCalcHypotenusMethodInValid)
 		{
 			Triangle t2 = {};
@@ -24,5 +25,6 @@ namespace UnitTests
 			t2.sideB = -3;
 			Assert::AreEqual(t2.CalcHypotenus(t2.sideA, t2.sideB), 0);
 		}
+
 	};
 }
