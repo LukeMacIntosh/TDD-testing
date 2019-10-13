@@ -10,5 +10,4 @@ public:
 		sideC = sqrt((sideA * sideA) + (sideB * sideB));
 		return sideC;
 	}
-
 };
