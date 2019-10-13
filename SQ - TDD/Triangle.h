@@ -14,6 +14,9 @@ public:
 		return sideC;
 	}
 	int CalcArea(int sideA, int sideB) {
+		if (sideA < 0 || sideB < 0) {
+			return 0;
+		}
 		int Area = (sideA * sideB) / 2;
 		return Area;
 	}
