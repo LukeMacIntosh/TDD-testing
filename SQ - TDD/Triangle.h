@@ -6,6 +6,10 @@ public:
 	int sideB;
 	int sideC;
 
+	int angleA;
+	int angleB;
+	int angleC;
+
 	int CalcHypotenus(int sideA, int sideB) {
 		if (sideA < 0 || sideB < 0) {
 			return 0;
@@ -19,5 +23,9 @@ public:
 		}
 		int Area = (sideA * sideB) / 2;
 		return Area;
+	}
+	int CalcAngle(int angleA, int angleB) {
+		angleC = 180 - (angleA + angleB);
+		return angleC;
 	}
 };
