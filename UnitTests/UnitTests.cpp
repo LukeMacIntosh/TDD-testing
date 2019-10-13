@@ -12,7 +12,7 @@ namespace UnitTests
 		
 		TEST_METHOD(TestCalcHypotenusMethod)
 		{
-			Triangle t1 = {};
+			Triangle t1;
 			Assert::AreEqual(t1.CalcHypotenus(t1.sideA, t1.sideB), t1.sideC);
 		}
 	};
