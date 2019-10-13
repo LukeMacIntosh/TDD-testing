@@ -13,4 +13,8 @@ public:
 		sideC = sqrt((sideA * sideA) + (sideB * sideB));
 		return sideC;
 	}
+	int CalcArea(int sideA, int sideB) {
+		int Area = (sideA * sideB) / 2;
+		return Area;
+	}
 };
