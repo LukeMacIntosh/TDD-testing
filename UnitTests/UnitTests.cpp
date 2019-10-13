@@ -42,12 +42,20 @@ namespace UnitTests
 			Assert::AreEqual(t4.CalcArea(t4.sideA, t4.sideB), 0);
 		}
 
-		TEST_METHOD(TestCalcAngleMethodInValid)
+		TEST_METHOD(TestCalcAngleMethodValid)
 		{
 			Triangle t5 = {};
 			t5.angleA = 60;
 			t5.angleB = 40;
-			Assert::AreEqual(t5.CalcAngle(t5.angleA, t5.angleB), 80); 
+			Assert::AreEqual(t5.CalcAngle(t5.angleA, t5.angleB), 80);
+		}
+
+		TEST_METHOD(TestCalcAngleMethodInValid)
+		{
+			Triangle t5 = {};
+			t5.angleA = -60;
+			t5.angleB = -40;
+			Assert::AreEqual(t5.CalcAngle(t5.angleA, t5.angleB), 0);
 		}
 
 	};
